@@ -423,7 +423,7 @@ hr.styled-separator::after {
 }
 
 a {
-	color: #cd2653;
+	color: #006633;
 	text-decoration: underline;
 }
 
@@ -803,7 +803,7 @@ input[type="reset"],
 input[type="submit"] {
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	background: #cd2653;
+	background: #006633;
 	border: none;
 	border-radius: 0;
 	color: #fff;
@@ -1597,7 +1597,7 @@ ul.primary-menu {
 }
 
 .primary-menu a {
-	color: inherit;
+	color: white;
 	display: block;
 	line-height: 1.2;
 	text-decoration: none;

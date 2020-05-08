@@ -14,10 +14,20 @@
 		<script src='js/jquery-migrate.js'></script>
 		<script src='js/index.js' async></script>
 		<script>document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );</script>
+		
 		<style>
+
 			#site-logo {
 				width:300px;
 			}
+			@media only screen and (max-width: 1000px) {
+			  #site-logo {
+				margin-top:-76px;
+				position:relative;
+				z-index:999;
+			  }
+			}
+
 			.primary-menu{
 			    background-color: #00838f;
 			}
@@ -39,13 +49,19 @@
 				padding:0;
 			}
 			h2.page-title {
-				margin-top:0;
+				margin-top:1em;
+				margin-bottom:2em;
 				font-size:1.75em;
 			}
 			.centered {
 				text-align:center;
 			}
+			.primary-menu .icon {
+				color:white !important;
+			}
+
 		</style>
+
 	</head>
 
 	<body class="home blog enable-search-modal has-no-pagination showing-comments show-avatars footer-top-hidden">
@@ -216,10 +232,17 @@
 
 <main id="site-content" role="main">
 
-
 	<div id="main-content">
 		<h2 class="page-title centered">Patriot Pass Password Management</h2>
-		<p>Form</p>
+		<form style="width:15em; margin-left:auto; margin-right:auto;">
+			Net ID:<br />
+			<input type="text" name="netid" style="width:15em;" /><br />
+			Password:<br />
+			<input type="password" name="password" style="width:15em;" />
+			<input type="submit" name="submit" value="Login" style="display:block; margin-top:2em; margin-bottom:2em; margin-left:auto; margin-right:auto;" />
+			<p style="text-align:center;"><a href="#">Expired/Forgotten Password?</a></p>
+			<p style="text-align:center;"><a href="#">Activate Account</a></p>
+		</form>
 	</div>
 
 </main><!-- #site-content -->
