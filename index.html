@@ -13,6 +13,7 @@
 		<link rel='stylesheet' href='css/nav-bar.css' media='all' />
 		<link rel='stylesheet' href='css/sidebar.css' media='all' />
 		<link rel='stylesheet' href='css/content.css' media='all' />
+		<link rel='stylesheet' href='css/forms.css' media='all' />
 		<script src='js/jquery.js'></script>
 		<script src='js/jquery-migrate.js'></script>
 		<script src='js/index.js' async></script>
@@ -200,15 +201,43 @@
 
 	<div id="main-content">
 		<h2 class="page-title centered">Patriot Pass Password Management</h2>
-		<form style="width:15em; margin-left:auto; margin-right:auto;">
+
+		<form id="login">
+			<h3>Login</h3>
 			Net ID:<br />
-			<input type="text" name="netid" style="width:15em;" /><br />
+			<input type="text" name="netid" /><br />
 			Password:<br />
-			<input type="password" name="password" style="width:15em;" />
-			<input type="submit" name="submit" value="Login" style="display:block; margin-top:2em; margin-bottom:2em; margin-left:auto; margin-right:auto;" />
-			<p style="text-align:center;"><a href="#">Expired/Forgotten Password?</a></p>
-			<p style="text-align:center;"><a href="#">Activate Account</a></p>
+			<input type="password" name="password" />
+			<input type="submit" name="submit" value="Login" />
+			<p class="centered"><a href="#">Expired/Forgotten Password?</a></p>
+			<p class="centered"><a href="#">Activate Account</a></p>
 		</form>
+
+		<p>&nbsp;</p>
+
+		<form id="change-password">
+			<h3>Change Your Patriot Pass Password</h3>
+			New Password:<br />
+			<input type="password" name="new-password" placeholder="Enter a new password" />
+			<p>Password strength:</p>
+			Confirm New Password:<br />
+			<input type="password" name="new-password-confirm" placeholder="Please reenter the password" />
+			<p>Password requirements:<br />
+				<span style="margin-left:1em">At least 10 characters long<br />
+				<span style="margin-left:1em">At least 3 of the following:<br />
+				<span style="margin-left:2em">Upper case letters: A - Z<br />
+				<span style="margin-left:2em">Lower case letters: a - z<br />
+				<span style="margin-left:2em">Digits: 0 - 9<br />
+				<span style="margin-left:2em">Special characters: _<br />
+			</p>
+
+			<input type="submit" name="submit" value="Save Password" />
+
+			<p class="centered note">Your password will be further evaluated upon submission.</p>
+
+		</form>
+
+
 	</div>
 
 </main><!-- #site-content -->

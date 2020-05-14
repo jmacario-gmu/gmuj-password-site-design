@@ -436,7 +436,7 @@ hr.styled-separator::after {
 
 a {
 	color: #006633;
-	/*text-decoration: underline;*/
+	text-decoration: none;
 }
 
 a:hover,

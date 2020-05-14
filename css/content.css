@@ -1,6 +1,7 @@
 #main-content {
 	/*border:1px solid #000;*/
 	width:75%;
+	float:right;
 	margin:auto;
 	margin-top:1em;
 	padding:0;
@@ -11,6 +12,12 @@
 	width:300px;
 }
 @media only screen and (max-width: 1000px) {
+
+	#main-content {
+		width:100%;
+		float:none;
+	}
+
   #site-logo {
 	margin-top:-76px;
 	position:relative;
@@ -30,4 +37,9 @@ h2.page-title {
 }
 .centered {
 	text-align:center;
+}
+
+.note {
+	font-size:0.9em;
+	color:grey;
 }

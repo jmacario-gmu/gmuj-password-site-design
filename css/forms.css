@@ -1,0 +1,35 @@
+form {
+    width: 80%;
+    margin-left: auto; 
+	margin-right:auto;
+}
+
+input {
+	margin-bottom:1em !important;
+}
+
+input[type=submit] {
+	display:block; 
+	margin-top:2em; 
+	margin-bottom:2em; 
+	margin-left:auto; 
+	margin-right:auto;
+}
+
+form h3 {
+    font-size:1.25em;
+}
+
+form#login {
+	text-align:center;
+}
+
+form#login input{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+form#login input[type="text"], form#login input[type="password"] {
+	width:15em;
+}
+

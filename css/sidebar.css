@@ -44,6 +44,49 @@ ul#menu-sidebar li.disabled a {
 /* Mobile */
 @media only screen and (max-width: 1000px) {
 
+	div#sidebar {
+		float:none; 
+		margin:1em 0;
+	}
 
+	ul#menu-sidebar {
+		
+	}
+
+	ul#menu-sidebar li {
+		float:left;
+		margin-left:-1em;
+		/*margin-bottom:0.5em;*/
+		padding-top:0.5em;
+		padding-bottom:0.5em;
+		padding-left:2em;
+		padding-right:1em;
+		-webkit-transform: skewX(0deg);
+		-moz-transform: skewX(0deg);
+		-ms-transform: skewX(0deg);
+		-o-transform: skewX(0deg);
+		transform: skewX(0deg);	
+		border-bottom:3px solid transparent;
+	}
+
+	ul#menu-sidebar li a {
+		display:block;
+	    -webkit-transform: skewX(0deg);
+	    -moz-transform: skewX(0deg);
+	    -ms-transform: skewX(0deg);
+	    -o-transform: skewX(0deg);
+	    transform: skewX(0deg);
+	    text-decoration:none;
+	}
+
+	ul#menu-sidebar li.active {
+		background-color:transparent;
+		border-bottom:3px solid #fc3;
+	}
+
+	div#main-content {
+		clear:both;
+		margin-top:6em;
+	}
 
 }
