@@ -1,6 +1,17 @@
 /*
 Theme Name: Twenty Twenty Menu Only
 
+Colors:
+nav bar: #00838f;
+nar bar sub-menus: #22a5af;
+
+Drop-down menu references:
+Drop-down sub menu indicator icons: .primary-menu .icon
+Drop-down sub-menu arrows: .primary-menu ul::after
+Drop-down sub-menus: .primary-menu ul
+Drop-down sub-sub-menus: .primary-menu ul ul::after
+
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -260,6 +271,7 @@ Inter variable font. Usage:
 
 
 main {
+	/*border: 1px solid #000;*/
 	display: block;
 }
 
@@ -424,7 +436,7 @@ hr.styled-separator::after {
 
 a {
 	color: #006633;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 
 a:hover,
@@ -1549,6 +1561,8 @@ ul.primary-menu {
 }
 
 .primary-menu .icon {
+	/* Drop-down menu sub-menu indicator icons */
+	color:white !important;
 	display: block;
 	height: 0.7rem;
 	position: absolute;
@@ -1601,6 +1615,7 @@ ul.primary-menu {
 	display: block;
 	line-height: 1.2;
 	text-decoration: none;
+	font-weight:bold;
 }
 
 .primary-menu a:hover,
@@ -1624,7 +1639,7 @@ ul.primary-menu {
 /* SUB MENU */
 
 .primary-menu ul {
-	background: #000;
+	background: #22a5af;
 	border-radius: 0.4rem;
 	color: #fff;
 	font-size: 1.7rem;
@@ -1663,8 +1678,9 @@ ul.primary-menu {
 }
 
 .primary-menu ul::after {
+	/*drop-down sub-menu arrows*/
 	border: 0.8rem solid transparent;
-	border-bottom-color: #000;
+	border-bottom-color: #22a5af;
 	right: 1.8rem;
 }
 
@@ -1710,10 +1726,9 @@ ul.primary-menu {
 }
 
 .primary-menu ul ul::after {
+	/* nav bar sub-sub menus arrows*/
 	border-bottom-color: transparent;
-
-	/*rtl:ignore*/
-	border-left-color: #000;
+	border-left-color: #22a5af;
 	bottom: auto;
 	right: -1.6rem;
 	top: 2rem;
@@ -3139,7 +3154,7 @@ button.sub-menu-toggle.active svg {
 		align-items: center;
 		display: flex;
 		justify-content: space-between;
-		padding: 2.8rem 0;
+		padding: 1.75rem 0;
 	}
 
 	.header-titles-wrapper {

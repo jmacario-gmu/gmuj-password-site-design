@@ -4,6 +4,7 @@
 }
 
 #university-links {
+    padding:0.3em 0;
 	display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -16,6 +17,10 @@
 }
 
 #university-links li a {
+    margin:0 0.5em;
+    font-family: "Open Sans", Verdana, Geneva, sans-serif;
+    font-size:13px !important;
+    font-weight:700;
     display:block;
     padding: 0.25em 1em;
     font-size:0.8em;

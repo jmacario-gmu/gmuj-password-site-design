@@ -10,58 +10,16 @@
 		<link rel='stylesheet' href='css/style.css' media='all' />
 		<link rel='stylesheet' href='css/university-menu.css' media='all' />
 		<link rel='stylesheet' href='css/top-bar.css' media='all' />
+		<link rel='stylesheet' href='css/nav-bar.css' media='all' />
+		<link rel='stylesheet' href='css/sidebar.css' media='all' />
+		<link rel='stylesheet' href='css/content.css' media='all' />
 		<script src='js/jquery.js'></script>
 		<script src='js/jquery-migrate.js'></script>
 		<script src='js/index.js' async></script>
 		<script>document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );</script>
-		
 		<style>
 
-			#site-logo {
-				width:300px;
-			}
-			@media only screen and (max-width: 1000px) {
-			  #site-logo {
-				margin-top:-76px;
-				position:relative;
-				z-index:999;
-			  }
-			}
-
-			.primary-menu{
-			    background-color: #00838f;
-			}
-			.primary-menu:before {
-			    content: '';
-			    position: absolute;
-			    left: 50px; 
-			    top: 0; 
-			    bottom: 0;
-			    right: calc(400px - 50vw);
-			    box-shadow: 25px 37px 29px 0px rgba(0,0,0,0.2);
-			    background: #00838f;
-			    transform: skew(-30deg, 0deg);
-			}
-			#main-content {
-				width:75%;
-				margin:auto;
-				margin-top:1em;
-				padding:0;
-			}
-			h2.page-title {
-				margin-top:1em;
-				margin-bottom:2em;
-				font-size:1.75em;
-			}
-			.centered {
-				text-align:center;
-			}
-			.primary-menu .icon {
-				color:white !important;
-			}
-
 		</style>
-
 	</head>
 
 	<body class="home blog enable-search-modal has-no-pagination showing-comments show-avatars footer-top-hidden">
@@ -96,8 +54,8 @@
 		                </li>
 		            </ul>
 		        </div>
+		        <!--
 		        <div class="right-side">
-		            <!-- Prominent Links -->
 		            <ul id="prominent-links" class="links">
 		            	<li class="menu-item menu-item-type-custom menu-item-object-custom">
 		            		<a href="https://www2.gmu.edu">Prominent Link 1</a>
@@ -107,6 +65,7 @@
 						</li>
 					</ul>
 		        </div>
+		    	-->
 		    </div>
 		</div>
 
@@ -128,7 +87,6 @@
 
 				<div class="header-navigation-wrapper">
 
-					
 							<nav class="primary-menu-wrapper" aria-label="Horizontal" role="navigation">
 
 								<ul class="primary-menu reset-list-style">
@@ -231,6 +189,14 @@
 <img id="site-logo" src="images/its-logo.svg" />
 
 <main id="site-content" role="main">
+
+	<div id="sidebar">
+		<ul id="menu-sidebar">
+			<li class="active"><span><a href="#">Sidebar Menu Item 1</a></span></li>
+			<li><a href="#">Sidebar Menu Item 2</a></li>
+			<li class="disabled"><a>Disabled Menu Item 3</a></li>
+		</ul>
+	</div>
 
 	<div id="main-content">
 		<h2 class="page-title centered">Patriot Pass Password Management</h2>

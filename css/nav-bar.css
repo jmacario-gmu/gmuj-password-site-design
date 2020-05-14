@@ -1,0 +1,31 @@
+.primary-menu:before {
+    content: '';
+    position: absolute;
+    left: 50px; 
+    top: 0; 
+    bottom: 0;
+    right: calc(400px - 50vw);
+    box-shadow: 25px 37px 29px 0px rgba(0,0,0,0.2);
+    background: #00838f;
+    transform: skew(-30deg, 0deg);
+}
+
+ul.primary-menu li a:hover {
+	text-decoration:none;
+}
+
+ul.primary-menu > li > a:hover::after {
+
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1em;
+    height: 4px;
+    transform: skew(-30deg);
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+    background: #febe10;
+
+}
