@@ -14,7 +14,7 @@
   #site-logo {
 	margin-top:-76px;
 	position:relative;
-	z-index:999;
+	z-index:50;
   }
 }
 @media only screen and (max-width: 768px) {
