@@ -4,6 +4,10 @@ form {
 	margin-right:auto;
 }
 
+form p {
+    font-size:0.9em;
+}
+
 input {
 	margin-bottom:1em !important;
 }
