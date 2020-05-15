@@ -115,7 +115,8 @@ body {
 @supports ( font-variation-settings: normal ) {
 
 	body {
-		font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+		font-family: "Open Sans", Verdana, Geneva, sans-serif;
+		/*font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;*/
 	}
 }
 
@@ -129,7 +130,8 @@ body {
 }
 
 #site-content {
-	overflow: hidden;
+	/*overflow: hidden;*/
+	position:relative;
 }
 
 
@@ -284,7 +286,7 @@ h6,
 .faux-heading {
 	font-feature-settings: "lnum";
 	font-variant-numeric: lining-nums;
-	font-weight: 700;
+	font-weight: 500;
 	letter-spacing: -0.0415625em;
 	line-height: 1.25;
 	margin: 3.5rem 0 2rem;
@@ -1366,7 +1368,7 @@ body:not(.enable-search-modal) .header-titles-wrapper {
 
 .site-title {
 	font-size: 2.1rem;
-	font-weight: 600;
+	font-weight: 500;
 	line-height: 1;
 }
 
@@ -1552,7 +1554,7 @@ body:not(.enable-search-modal) .site-logo img {
 
 ul.primary-menu {
 	display: flex;
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	font-weight: 500;
 	letter-spacing: -0.0277em;
 	flex-wrap: wrap;
@@ -2276,7 +2278,7 @@ button.sub-menu-toggle.active svg {
 	.heading-size-2,
 	h3,
 	.heading-size-3 {
-		margin: 6rem auto 3rem;
+		/*margin: 6rem auto 3rem;*/
 	}
 
 	h4,
@@ -2367,7 +2369,7 @@ button.sub-menu-toggle.active svg {
 
 	.site-title {
 		font-size: 2.4rem;
-		font-weight: 700;
+		font-weight: 500;
 	}
 
 	.site-description {

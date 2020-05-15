@@ -1,6 +1,7 @@
 div#sidebar {
 	float:left; 
 	margin-top:3em;
+	clear:left;
 }
 
 ul#menu-sidebar {
@@ -86,7 +87,13 @@ ul#menu-sidebar li.disabled a {
 
 	div#main-content {
 		clear:both;
-		margin-top:6em;
+		/*margin-top:6em;*/
 	}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+
 
 }

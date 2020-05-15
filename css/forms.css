@@ -12,6 +12,10 @@ input {
 	margin-bottom:1em !important;
 }
 
+input[type="text"], input[type="password"] {
+	width:20em;
+}
+
 input[type=submit] {
 	display:block; 
 	margin-top:2em; 
@@ -36,4 +40,3 @@ form#login input{
 form#login input[type="text"], form#login input[type="password"] {
 	width:15em;
 }
-

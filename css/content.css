@@ -1,39 +1,68 @@
 #main-content {
 	/*border:1px solid #000;*/
 	width:75%;
-	float:right;
-	margin:auto;
+	float:left;
 	margin-top:1em;
 	padding:0;
 }
 
+@media only screen and (min-width: 1000px) {
+	#main-content {
+		/*border:1px solid #000;*/
+		width:750px;
+		float:left;
+		margin-top:1em;
+		padding:0;
+	}
+}
+
+div#header-flex-box {
+	display:flex; 
+	justify-content:space-between; 
+	align-items:flex-end; 
+	align-content:flex-start;
+}
+
+div#site-title-box {
+	flex-grow:2;
+}
+
 /* Logo */
 #site-logo {
+	float:left;
 	width:300px;
-}
-@media only screen and (max-width: 1000px) {
-
-	#main-content {
-		width:100%;
-		float:none;
-	}
-
-  #site-logo {
-	margin-top:-76px;
-	position:relative;
-	z-index:50;
-  }
-}
-@media only screen and (max-width: 768px) {
-  #site-logo {
-	margin-top:-50px;
-  }
+	/*margin-top:1em;*/
 }
 
-h2.page-title {
-	margin-top:1em;
-	margin-bottom:2em;
-	font-size:1.75em;
+/* User and logout links */
+div#user-info {
+	/*position:absolute;
+	right:0;
+	top:1em;
+	*/
+	margin: 1em;
+}
+
+div#user-info a {
+	display:block;
+	text-align:center;
+}
+
+a#username {
+	
+}
+
+a#logout {
+	color:gray;
+	text-decoration: underline;
+}
+
+h2.site-title {
+	margin-bottom:0 !important;
+	margin-left:1em;
+	padding-bottom:0.5em;
+	font-size:1.6em;
+	clear:left;
 }
 .centered {
 	text-align:center;
@@ -42,4 +71,60 @@ h2.page-title {
 .note {
 	font-size:0.9em;
 	color:grey;
+}
+
+@media only screen and (max-width: 1000px) {
+
+	h2.site-title {
+		padding-top:1em;
+	}
+
+	#main-content {
+		width:100%;
+		margin-left:0;
+	}
+
+	div#user-info {
+		margin-top: 2em;
+		position:absolute;
+		right:0;
+		top:1em;
+	}
+
+	div#header-flex-box {
+		display:block;
+	}
+
+	div#site-logo-box {
+		float:left;
+	}
+
+	#site-logo {
+	margin-top:-3em;
+	position:relative;
+	z-index:50;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+  h2.site-title {
+  	text-align:left !important;
+  	margin-left:1em;
+  	padding-top:2em;
+  }
+
+  #site-logo {
+	margin-top:-50px;
+  }
+
+  #main-content {
+  	margin-top:0
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  #site-logo {
+	display:none;
+  }
 }

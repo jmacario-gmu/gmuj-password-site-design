@@ -5,9 +5,8 @@
 .top-header {
     background: #006633;
     color: #fff;
-    font-size: 0.9em;
+    font-size: 0.85em !important;
     min-height:50px;
-    font-weight:bold;
 }
 .top-header .links {
     margin: 0;
@@ -53,6 +52,12 @@
 .top-header .right-side .links a {
    padding:0 0.75rem;
 }        
+
+@media only screen and (max-width: 768px) {
+    li#department {
+        display:none;
+    }
+}
 
 /* Desktop */
 @media only screen and (min-width: 768px) {
