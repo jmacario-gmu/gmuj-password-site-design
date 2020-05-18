@@ -11,6 +11,7 @@ Theme Name: Twenty Twenty Menu Only
 Colors:
 nav bar: #00838f;
 nar bar sub-menus: #22a5af;
+nav bar sub menus hover: background-color:#44c7cf;
 
 Drop-down menu references:
 Drop-down sub menu indicator icons: .primary-menu .icon
@@ -1700,6 +1701,10 @@ ul.primary-menu {
 	padding: 1rem 2rem;
 	transition: background-color 0.15s linear;
 	width: 100%;
+}
+
+.primary-menu ul a:hover {
+	background-color:#44c7cf;
 }
 
 .primary-menu ul li.menu-item-has-children > a {
