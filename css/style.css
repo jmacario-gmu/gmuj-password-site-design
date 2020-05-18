@@ -1,3 +1,10 @@
+@import 'university-menu.css';
+@import 'top-bar.css';
+@import 'nav-bar.css';
+@import 'sidebar.css';
+@import 'content.css';
+@import 'forms.css';
+
 /*
 Theme Name: Twenty Twenty Menu Only
 
@@ -1617,7 +1624,6 @@ ul.primary-menu {
 	display: block;
 	line-height: 1.2;
 	text-decoration: none;
-	font-weight:bold;
 }
 
 .primary-menu a:hover,
