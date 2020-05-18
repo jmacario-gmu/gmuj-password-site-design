@@ -2,6 +2,7 @@ div#sidebar {
 	float:left; 
 	margin-top:3em;
 	clear:left;
+	width:300px;
 }
 
 ul#menu-sidebar {
@@ -45,6 +46,17 @@ ul#menu-sidebar li.disabled a {
 /* Mobile */
 @media only screen and (max-width: 1000px) {
 
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+	div#sidebar {
+		width:auto;
+	}
+
+
 	div#sidebar {
 		float:none; 
 		margin:1em 0;
@@ -86,14 +98,8 @@ ul#menu-sidebar li.disabled a {
 	}
 
 	div#main-content {
-		clear:both;
+		/*clear:both;*/
 		/*margin-top:6em;*/
 	}
-
-}
-
-@media only screen and (max-width: 768px) {
-
-
 
 }
