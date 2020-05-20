@@ -106,7 +106,7 @@ h2.site-title {
 @media only screen and (max-width: 768px) {
   h2.site-title {
   	text-align:left !important;
-  	margin-left:1em;
+  	margin-left:0.5em;
   	padding-top:2em;
   }
 
@@ -115,7 +115,7 @@ h2.site-title {
   }
 
   #main-content {
-  	margin:0 1em;
+  	margin:0;
   	width:100% !important;
   }
 
