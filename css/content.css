@@ -104,20 +104,20 @@ h2.site-title {
 }
 
 @media only screen and (max-width: 768px) {
-  h2.site-title {
-  	text-align:left !important;
-  	margin-left:0.5em;
-  	padding-top:2em;
-  }
+	h2.site-title {
+		text-align:left !important;
+		margin-left:0.5em;
+		padding-top:2em;
+	}
 
-  #site-logo {
+	#site-logo {
 	margin-top:-50px;
-  }
+	}
 
-  #main-content {
-  	margin:0;
-  	width:100% !important;
-  }
+	#main-content {
+		margin:0 1em;
+		width:90% !important;
+	}
 
 }
 
