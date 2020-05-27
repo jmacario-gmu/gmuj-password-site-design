@@ -12,21 +12,28 @@ ul#menu-sidebar {
 }
 
 ul#menu-sidebar li {
+	margin-left:-2em;
+	padding-left:2em;
+	padding-right:1em;
+}
+
+ul#menu-sidebar li div.label {
+	width:auto;
 	margin-left:-1em;
-	/*margin-bottom:0.5em;*/
 	padding-top:0.5em;
 	padding-bottom:0.5em;
 	padding-left:2em;
-	padding-right:1em;
+	padding-right:1.5em;	
 	-webkit-transform: skewX(30deg);
 	-moz-transform: skewX(30deg);
 	-ms-transform: skewX(30deg);
 	-o-transform: skewX(30deg);
-	transform: skewX(30deg);	
+	transform: skewX(30deg);
+	display:inline-block;
 }
 
 ul#menu-sidebar li a {
-	display:block;
+	display:inline-block;
     -webkit-transform: skewX(-30deg);
     -moz-transform: skewX(-30deg);
     -ms-transform: skewX(-30deg);
@@ -35,7 +42,7 @@ ul#menu-sidebar li a {
     text-decoration:none;
 }
 
-ul#menu-sidebar li.active {
+ul#menu-sidebar li.active div.label {
 	background-color:#fc3;
 }
 
@@ -63,36 +70,40 @@ ul#menu-sidebar li.disabled a {
 	}
 
 	ul#menu-sidebar {
-		
+		margin-left:0.5em;
 	}
 
 	ul#menu-sidebar li {
 		float:left;
 		margin-left:-1em;
-		/*margin-bottom:0.5em;*/
 		padding-top:0.5em;
 		padding-bottom:0.5em;
 		padding-left:2em;
 		padding-right:1em;
+	}
+
+	ul#menu-sidebar li div.label {
 		-webkit-transform: skewX(0deg);
 		-moz-transform: skewX(0deg);
 		-ms-transform: skewX(0deg);
 		-o-transform: skewX(0deg);
-		transform: skewX(0deg);	
+		transform: skewX(0deg);
+		padding:0;
 		border-bottom:3px solid transparent;
 	}
 
 	ul#menu-sidebar li a {
+		-webkit-transform: skewX(0deg);
+		-moz-transform: skewX(0deg);
+		-ms-transform: skewX(0deg);
+		-o-transform: skewX(0deg);
+		transform: skewX(0deg);
 		display:block;
-	    -webkit-transform: skewX(0deg);
-	    -moz-transform: skewX(0deg);
-	    -ms-transform: skewX(0deg);
-	    -o-transform: skewX(0deg);
-	    transform: skewX(0deg);
 	    text-decoration:none;
+	    margin:0 0.5em;
 	}
 
-	ul#menu-sidebar li.active {
+	ul#menu-sidebar li.active div.label {
 		background-color:transparent;
 		border-bottom:3px solid #fc3;
 	}
